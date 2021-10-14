@@ -33,7 +33,6 @@ async function getAction () {
     const response = await fetch(url)
     const data = await response.json()
     const activity = data.activity
-    const link = data.link
     printAction(activity)
 }
 
